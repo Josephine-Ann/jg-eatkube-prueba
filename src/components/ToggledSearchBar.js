@@ -4,7 +4,7 @@ import Logo from '../logo.svg'
 
 function ToggledSearchBar() {
     const [inputText, setInputText] = useState("")
-    // Guarda el texto que se verá en la consola cuando le damos al botón de enviar
+    // Guarda el texto que se verá en la consola cuando le hacemos clic al botón de enviar
     // Saves the text that will be seen in the console when we click the send button
     const [inputColor, setInputColor] = useState("default")
     // Especifica si el campo de input se debería ver en verde 
@@ -20,7 +20,7 @@ function ToggledSearchBar() {
     // Para cambiar cuál botón está activo 
     // To change which button is active
     const handleSendText = () => console.log(inputText)
-    // Para que se vea el input en la consola cuando le damos al botón de enviar 
+    // Para que se vea el input en la consola cuando le hacemos clic al botón de enviar 
     // So that the input is seen in the console when we click on the send button
     const handleInput = e => {
         (e.target.value.toLowerCase().includes("a")) ? setInputColor("green") : setInputColor("default")

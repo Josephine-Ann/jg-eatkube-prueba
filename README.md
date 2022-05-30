@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Debe ser un único componente con estilos responsive que se adapte a los tamaños de pantalla (no hacer dos componentes distintos uno para cada tamaño de pantalla)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El componente se hizo según las instrucciones, en lugar de crear dos componentes (tener el DOM más pequeño tiene ventajas en cuanto a la optimización.)
 
-## Available Scripts
+The component was done according to the instructions, instead of creating two components (having a smaller DOM has optimisation-related advantages)
 
-In the project directory, you can run:
+## El componente debe contener dos botones en la parte superior, estando solo uno de ellos activo al mismo tiempo. 
 
-### `npm start`
+Dos botones se crearon, a hacer clic en uno los dos se cambian para que siempre uno esté activo y el otro no. 
+Two buttons were created, when one is clicked the two change so that one is always active and the other is not.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Al cargar el componente por primera vez, debe aparecer un mensaje en consola que indique "Componente cargado correctamente", este mensaje debe aparecer una única vez al cargar el componente y no debe volver a aparecer en ningún momento.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+He tenido que usar un custom hook para lograr esto. https://dev.to/ag-grid/react-18-avoiding-use-effect-getting-called-twice-4i9e
 
-### `npm test`
+I have had to use a custom hook to achieve this. https://dev.to/ag-grid/react-18-avoiding-use-effect-getting-called-twice-4i9e
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Al ingresar texto en el input, si en algún momento el texto contiene la letra "a", el fondo de la caja debe cambiar a color verde, si se elimina la letra, debe volver a su color original.
 
-### `npm run build`
+Se hizo, con un verde muy sútil para que no se vea muy diferente/no destaca demasiado. 
+This has been done, with a subtle green that doesn't stand out too much as being different. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Al hacer click en el botón de "Enviar" debe aparecer por consola el texto introducido en el input.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Se hizo. This has been done. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### npm start
 
-### `npm run eject`
+El script para ponerla en marcha. 
+Script to run the app. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### TailWind
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Usé clases de utilidad, con TailWind.
+I used utility classes, with TailWind. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
