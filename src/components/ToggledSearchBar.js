@@ -7,7 +7,7 @@ function ToggledSearchBar() {
     // Guarda el texto que se verá en la consola cuando le hacemos clic al botón de enviar
     // Saves the text that will be seen in the console when we click the send button
     const [inputColor, setInputColor] = useState("default")
-    // Especifica si el campo de input se debería ver en verde 
+    // Especifica si el campo de entrada se debería ver en verde 
     // Specifies if the input field should be seen in green
     const [buttonActive, setButtonActive] = useState("left")
     // Especifica cuál botón está activo ahora mismo
@@ -24,7 +24,7 @@ function ToggledSearchBar() {
     // So that the input is seen in the console when we click on the send button
     const handleInput = e => {
         (e.target.value.toLowerCase().includes("a")) ? setInputColor("green") : setInputColor("default")
-        // Si se incluye 'a' en el campo de input, se verá en verde
+        // Si se incluye 'a' en el campo de entrada, se verá en verde
         // If 'a' is included in the input field, it will be displayed in green
         let text = e.target.value
         setInputText(text)
