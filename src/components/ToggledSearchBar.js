@@ -45,10 +45,10 @@ function ToggledSearchBar() {
                 </div>
             </div>
             <div className='border-t-[0.09rem] max-h-[90%] mt-3 align-middle bg-white h-[25rem] sm:w-[40rem] w-[20rem] max-w-[90%] drop-shadow-md rounded-md flex flex-col justify-center lg:flex-row lg:justify-around lg:items-center'>
-                <div className='flex justify-center items-center'>
+                <div className='lg:order-1 flex justify-center items-center'>
                     <img className="h-[15rem]" alt="react-logo" src={Logo} />
                 </div>
-                <div className='flex flex-col justify-between items-center lg:pr-8'>
+                <div className='flex flex-col justify-between items-center lg:pl-24'>
                     <input onChange={(e) => { handleInput(e) }} className={`rounded-sm border-2 my-3 ${inputColor === "green" && "bg-green-100"}`} />
                     <button onClick={() => { handleSendText() }} className='font-semibold my-3 drop-shadow-md bg-gradient-to-r from-[#1B7EC8] to-[#3FA9FB] mx-4 px-8 py-2 text-white rounded-md'>ENVIAR</button>
                 </div>

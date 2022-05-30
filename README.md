@@ -11,13 +11,14 @@ Two buttons were created, when one is clicked the two change so that one is alwa
 
 ## Al cargar el componente por primera vez, debe aparecer un mensaje en consola que indique "Componente cargado correctamente", este mensaje debe aparecer una única vez al cargar el componente y no debe volver a aparecer en ningún momento.
 
-He tenido que usar un custom hook para lograr esto. https://dev.to/ag-grid/react-18-avoiding-use-effect-getting-called-twice-4i9e
+He tenido que usar un custom hook para lograr esto. 
 
-I have had to use a custom hook to achieve this. https://dev.to/ag-grid/react-18-avoiding-use-effect-getting-called-twice-4i9e
+I have had to use a custom hook to achieve this. 
 
 ## Al ingresar texto en el input, si en algún momento el texto contiene la letra "a", el fondo de la caja debe cambiar a color verde, si se elimina la letra, debe volver a su color original.
 
-Se hizo, con un verde muy sútil para que no se vea muy diferente/no destaca demasiado. 
+Se hizo, con un verde muy sútil para que no se vea muy diferente/no destaca demasiado.
+ 
 This has been done, with a subtle green that doesn't stand out too much as being different. 
 
 ## Al hacer click en el botón de "Enviar" debe aparecer por consola el texto introducido en el input.
